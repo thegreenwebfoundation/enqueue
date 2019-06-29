@@ -84,7 +84,7 @@ class RabbitMqDriverTest extends TestCase
             [
                 'dsn' => getenv('RABBITMQ_AMQP_DSN'),
             ],
-            ['rabbit_mq_lazy_queues' => ['aname']]
+            [0 => ['rabbit_mq_lazy_queues' => ['aname']]]
         );
 
         $driver = $this->createDriver(
